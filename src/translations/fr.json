@@ -1,6 +1,6 @@
 {
     "HomePage": {
-        "title": "Bienvenue!",
-        "subtitle": "Ceci est mon site web."
+        "title": "Bienvenue !",
+        "subtitle": "Ce site web est encore en construction. <br/>Il sera disponible le 6 Janvier 2026.<br/>Merci de votre patience. Voici mon github : <a href=\"https://github.com/hinarosha\" target=\"_blank\" style=\"color: #2684FF; text-decoration: none; pointer-events: auto;\">hinarosha</a>"
     }
 }

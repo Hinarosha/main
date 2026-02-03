@@ -8,7 +8,7 @@ const Medusae = () => {
     const meshRef = useRef();
     const { viewport } = useThree();
 
-    // User: "Add a bit more particles"
+    // Number of particles
     const countX = 100;
     const countY = 55;
     const count = countX * countY;
@@ -105,8 +105,7 @@ const Medusae = () => {
                 float rimInfluence = smoothstep(rimWidth, 0.0, abs(dist - currentRadius));
                 
                 // --- 3. WAVE MOVEMENT (Gentle Ripple) ---
-                // Instead of a fast travel wave, we just gently push particles out
-                // when the Halo expands.
+                // Instead of a fast travel wave, we just gently push particles out when the Halo expands.
                 
                 vec2 pushDir = normalize(relToMouse + vec2(0.0001, 0.0));
                 
@@ -141,10 +140,8 @@ const Medusae = () => {
                 vPos = pos.xy;
                 
                 // --- 5. ROTATION ---
-                
-                // --- 5. ROTATION ---
 
-                // User: "Must be directed towards mouse" (Radial)
+                // Radial
                 
                 // atan(y, x) gives angle of vector FROM mouse TO particle.
                 // Aligning with this makes them point radially (like rays/spokes).
@@ -280,7 +277,7 @@ const Medusae = () => {
         const current = material.uniforms.uMouse.value;
 
         // "Heavy" Drag: Reduced to 0.015 for more weight
-        const dragFactor = 0.055;
+        const dragFactor = 0.025;
 
         // If it's the very first frame or mouse just entered, we might want to snap
         // but for now, initializing to 0,0 already makes it appear instantly at center.
