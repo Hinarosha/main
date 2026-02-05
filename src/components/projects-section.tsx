@@ -33,7 +33,7 @@ export function ProjectsSection() {
   return (
     <section className="py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="mb-16 max-w-2xl">
+        <div className="mb-16 max-w-2xl rounded-2xl border border-border/20 bg-background/[0.03] px-6 py-6 backdrop-blur-[3px] md:px-8 md:py-8">
           <span className="mb-4 inline-block text-xs font-medium text-muted-foreground uppercase tracking-widest">
             Selected Work
           </span>

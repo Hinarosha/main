@@ -2,9 +2,9 @@
 
 export function Footer() {
   return (
-    <footer className="border-t border-border/40 py-8">
+    <footer className="py-8">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+        <div className="flex flex-col items-center justify-between gap-4 rounded-2xl border border-border/20 bg-background/[0.03] px-6 py-6 backdrop-blur-[3px] sm:flex-row">
           <p className="text-sm text-muted-foreground">
             2026. Crafted with care.
           </p>

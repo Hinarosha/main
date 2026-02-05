@@ -2,6 +2,7 @@ import React from "react"
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 
+import { LocaleProvider } from "@/components/locale-provider"
 import './globals.css'
 
 const inter = Inter({ 
@@ -29,7 +30,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} font-sans antialiased`}>{children}</body>
+      <body className={`${inter.variable} font-sans antialiased`}>
+        <LocaleProvider>{children}</LocaleProvider>
+      </body>
     </html>
   )
 }

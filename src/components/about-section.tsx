@@ -15,7 +15,7 @@ export function AboutSection() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Left column - heading */}
-          <div>
+          <div className="rounded-2xl border border-border/20 bg-background/[0.03] px-6 py-6 backdrop-blur-[3px] md:px-8 md:py-8">
             <span className="mb-4 inline-block text-xs font-medium text-muted-foreground uppercase tracking-widest">
               About
             </span>
@@ -26,7 +26,7 @@ export function AboutSection() {
 
           {/* Right column - content */}
           <div className="space-y-6">
-            <div className="rounded-2xl border border-border/50 bg-card/40 p-6 backdrop-blur-sm md:p-8">
+            <div className="rounded-2xl border border-border/20 bg-background/[0.03] p-6 backdrop-blur-[3px] md:p-8">
               <p className="text-foreground/90 leading-relaxed">
                 {"I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability."}
               </p>
@@ -37,7 +37,7 @@ export function AboutSection() {
             </div>
 
             {/* Social links */}
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 rounded-2xl border border-border/20 bg-background/[0.03] px-6 py-4 backdrop-blur-[3px]">
               {socialLinks.map((link) => (
                 <Button
                   key={link.label}

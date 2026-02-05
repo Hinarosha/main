@@ -21,7 +21,7 @@ export function ProjectCard({
   githubUrl = "#",
 }: ProjectCardProps) {
   return (
-    <Card className="group relative overflow-hidden border-border/50 bg-card/60 backdrop-blur-sm transition-all duration-300 hover:border-border hover:bg-card/80 hover:shadow-lg hover:-translate-y-1">
+    <Card className="group relative overflow-hidden border border-border/20 bg-background/[0.03] backdrop-blur-[3px] transition-all duration-300 hover:border-border/40 hover:bg-background/[0.06] hover:shadow-lg hover:-translate-y-1">
       {/* Image placeholder */}
       <div className="relative aspect-[16/10] overflow-hidden bg-secondary/40">
         {imageUrl ? (
@@ -41,7 +41,7 @@ export function ProjectCard({
         
         {/* Status badge */}
         <div className="absolute top-3 left-3">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-background/80 px-2.5 py-1 text-xs font-medium backdrop-blur-sm">
+          <span className="inline-flex items-center gap-1.5 rounded-full border border-border/20 bg-background/[0.03] px-2.5 py-1 text-xs font-medium backdrop-blur-[3px]">
             <span className="h-1.5 w-1.5 rounded-full bg-amber-500 animate-pulse" />
             In Progress
           </span>

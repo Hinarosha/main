@@ -1,6 +1,5 @@
 {
-    "HomePage": {
-        "title": "Kyllian Levent",
-        "subtitle": "This is my website."
+    "navbar": {
+        "title": "Hinarosha"
     }
 }

@@ -1,6 +1,5 @@
 {
-    "HomePage": {
-        "title": "キリアン ルヴァン",
-        "subtitle": "これは私のウェブサイトです。"
+    "navbar": {
+        "title": "ヒナロシャ"
     }
 }
