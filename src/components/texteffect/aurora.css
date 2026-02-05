@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+/* Aurora text effect
+   - Only the text itself is colorful/animated
+   - Hero-sized for main title
+   - No external glow, colors match Medusae shader palette */
+
+:root {
+    /* Match Medusae / Google fragment shader colors as closely as possible */
+    --aurora-blue: #4285f5;    /* ≈ vec3(0.26, 0.52, 0.96) */
+    --aurora-red: #eb4236;     /* ≈ vec3(0.92, 0.26, 0.21) */
+    --aurora-yellow: #faba03;  /* ≈ vec3(0.98, 0.73, 0.01) */
+    --aurora-green: #34a853;   /* Google green, added to complete the set */
+
+    /* Bigger, strong hero-style text size */
+    --fs-aurora: clamp(3.5rem, 7vw, 5rem);
+    --ls-aurora: clamp(-1px, -0.2vw, -2px);
+}
+
+.aurora-wrapper {
+    /* Centers the aurora text within its container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aurora-text {
+    /* Base typography for the aurora text */
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: var(--fs-aurora);
+    font-weight: 800;
+    letter-spacing: var(--ls-aurora);
+    margin: 0;
+    position: relative;
+    text-align: center;
+
+    /* Four overlapping color "orbs" that fade into each other.
+       No white / transparent gaps so the text never disappears. */
+    background-size: 140% 140%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    /* No glow: keep the color exactly like the Medusae palette, without extra halo */
+    text-shadow: none;
+
+    /* Multi-layer motion of circular blobs.
+       We animate the gradient definitions themselves (not just scroll),
+       so blue / red / yellow / green actually move to different sides. */
+    animation: aurora-orbits 14s linear infinite;
+}
+
+@keyframes aurora-orbits {
+    0% {
+        background-image:
+            radial-gradient(circle at 10% 20%, var(--aurora-blue) 0, var(--aurora-blue) 30%, var(--aurora-red) 80%),
+            radial-gradient(circle at 85% 10%, var(--aurora-red) 0, var(--aurora-red) 30%, var(--aurora-yellow) 80%),
+            radial-gradient(circle at 15% 90%, var(--aurora-yellow) 0, var(--aurora-yellow) 30%, var(--aurora-green) 80%),
+            radial-gradient(circle at 90% 85%, var(--aurora-green) 0, var(--aurora-green) 30%, var(--aurora-blue) 80%);
+    }
+
+    25% {
+        background-image:
+            radial-gradient(circle at 70% 0%, var(--aurora-blue) 0, var(--aurora-blue) 30%, var(--aurora-red) 80%),
+            radial-gradient(circle at 0% 40%, var(--aurora-red) 0, var(--aurora-red) 30%, var(--aurora-yellow) 80%),
+            radial-gradient(circle at 50% 110%, var(--aurora-yellow) 0, var(--aurora-yellow) 30%, var(--aurora-green) 80%),
+            radial-gradient(circle at 100% 40%, var(--aurora-green) 0, var(--aurora-green) 30%, var(--aurora-blue) 80%);
+    }
+
+    50% {
+        background-image:
+            radial-gradient(circle at 110% 20%, var(--aurora-blue) 0, var(--aurora-blue) 30%, var(--aurora-red) 80%),
+            radial-gradient(circle at 10% 90%, var(--aurora-red) 0, var(--aurora-red) 30%, var(--aurora-yellow) 80%),
+            radial-gradient(circle at 90% 0%, var(--aurora-yellow) 0, var(--aurora-yellow) 30%, var(--aurora-green) 80%),
+            radial-gradient(circle at -10% 70%, var(--aurora-green) 0, var(--aurora-green) 30%, var(--aurora-blue) 80%);
+    }
+
+    75% {
+        background-image:
+            radial-gradient(circle at 50% 110%, var(--aurora-blue) 0, var(--aurora-blue) 30%, var(--aurora-red) 80%),
+            radial-gradient(circle at 120% 60%, var(--aurora-red) 0, var(--aurora-red) 30%, var(--aurora-yellow) 80%),
+            radial-gradient(circle at -10% 10%, var(--aurora-yellow) 0, var(--aurora-yellow) 30%, var(--aurora-green) 80%),
+            radial-gradient(circle at 60% -10%, var(--aurora-green) 0, var(--aurora-green) 30%, var(--aurora-blue) 80%);
+    }
+
+    100% {
+        background-image:
+            radial-gradient(circle at 10% 20%, var(--aurora-blue) 0, var(--aurora-blue) 30%, var(--aurora-red) 80%),
+            radial-gradient(circle at 85% 10%, var(--aurora-red) 0, var(--aurora-red) 30%, var(--aurora-yellow) 80%),
+            radial-gradient(circle at 15% 90%, var(--aurora-yellow) 0, var(--aurora-yellow) 30%, var(--aurora-green) 80%),
+            radial-gradient(circle at 90% 85%, var(--aurora-green) 0, var(--aurora-green) 30%, var(--aurora-blue) 80%);
+    }
+}

@@ -1,0 +1,35 @@
+/* Root typewriter text */
+.cursor {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    color: #000000;
+    /* Subtitle closer to a small heading size */
+    font-size: 1.5rem;
+    font-family: inherit;
+    text-align: center;
+    /* Allow <br/> from HTML to work */
+    white-space: normal;
+}
+
+/* Blinking caret placed at the end of the text */
+.cursor-bar {
+    display: inline-block;
+    width: 2px;
+    height: 1.1em;
+    margin-left: 2px;
+    background-color: rgba(0, 0, 0, 0.9);
+    animation: blinkingCursor 600ms steps(1) infinite;
+}
+
+@keyframes blinkingCursor {
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    50.1%,
+    100% {
+        opacity: 0;
+    }
+}
