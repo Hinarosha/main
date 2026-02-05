@@ -4,12 +4,15 @@
     display: inline-block;
     margin: 0 auto;
     color: #000000;
-    /* Subtitle closer to a small heading size */
-    font-size: 1.5rem;
+    /* Subtitle sized like a hero subheading */
+    font-size: clamp(2.4rem, 4vw, 3.4rem);
+    line-height: 1.1;
+    /* Let lines be as wide as needed; only <br/> should force breaks on large screens */
+    max-width: none;
     font-family: inherit;
     text-align: center;
-    /* Allow <br/> from HTML to work */
-    white-space: normal;
+    /* Respect <br/> and newlines, avoid extra wrapping when there's room */
+    white-space: pre-line;
 }
 
 /* Blinking caret placed at the end of the text */

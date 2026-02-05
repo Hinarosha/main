@@ -4,7 +4,7 @@ import { useRef, useMemo, useEffect } from "react";
 import { useFrame, useThree } from "@react-three/fiber";
 import * as THREE from "three";
 
-const Medusae = () => {
+const Medusae = ({ mouseRef }) => {
     const meshRef = useRef();
     const { viewport } = useThree();
 
@@ -260,17 +260,17 @@ const Medusae = () => {
     }, []);
 
     useFrame((state) => {
-        const { clock, pointer } = state;
+        const { clock } = state;
         material.uniforms.uTime.value = clock.getElapsedTime();
 
-        // Determine Target
         let targetX = 0;
         let targetY = 0;
-
-        // Only follow pointer if mouse is on screen
-        if (hovering.current) {
-            targetX = (pointer.x * viewport.width) / 2;
-            targetY = (pointer.y * viewport.height) / 2;
+        if (hovering.current && mouseRef?.current != null) {
+            const { x: cx, y: cy } = mouseRef.current;
+            const ndcX = (cx / window.innerWidth) * 2 - 1;
+            const ndcY = 1 - (cy / window.innerHeight) * 2;
+            targetX = (ndcX * viewport.width) / 2;
+            targetY = (ndcY * viewport.height) / 2;
         }
 
         // Current: Center of Gravity

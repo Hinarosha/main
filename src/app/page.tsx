@@ -1,39 +1,53 @@
-'use client';
+"use client"
 
-import { Canvas } from "@react-three/fiber";
-import Medusae from "@/components/medusae";
-import { useTranslations } from 'next-intl';
-import Aurora from "@/components/texteffect/aurora";
-import Typewriter from "@/components/texteffect/typewritter";
+import { useRef, useEffect, useState } from "react"
+import { ThemeProvider } from "@/components/theme-provider"
+import { Navbar } from "@/components/navbar"
+import { HeroSection } from "@/components/hero-section"
+import { ProjectsSection } from "@/components/projects-section"
+import { AboutSection } from "@/components/about-section"
+import { Footer } from "@/components/footer"
+import { Canvas } from "@react-three/fiber"
+import Medusae from "@/components/medusae"
 
-export default function Home() {
-  const t = useTranslations('HomePage');
-  const rawSubtitle = t.raw('subtitle');
+export default function PortfolioPage() {
+  const mouseRef = useRef({ x: 0, y: 0 })
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+  useEffect(() => {
+    const onMove = (e: MouseEvent) => { mouseRef.current = { x: e.clientX, y: e.clientY } }
+    window.addEventListener("mousemove", onMove)
+    return () => window.removeEventListener("mousemove", onMove)
+  }, [])
 
   return (
-    <div style={{ width: "100vw", height: "100vh", background: "#ffffff", position: "relative", overflow: "hidden" }}>
-      <Canvas camera={{ position: [0, 0, 5] }}>
-        <color attach="background" args={["#ffffff"]} />
-        <Medusae />
-        {/* Aurora text rendered directly in the 3D scene,
-            sharing a similar animated color field to Medusae */}
-        <Aurora text={t('title')} />
-      </Canvas>
-      <div
-        style={{
-          position: 'absolute',
-          bottom: '22%',
-          left: '50%',
-          transform: 'translateX(-50%)',
-          textAlign: 'center',
-          // Allow pointer interaction so links remain clickable
-          pointerEvents: 'auto',
-          zIndex: 10,
-        }}
-      >
-        {/* Animate the raw HTML subtitle so <br/> and <a> are preserved */}
-        <Typewriter html={rawSubtitle} />
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      <div className="relative min-h-screen">
+        {/* Medusae only after mount so server and initial client HTML match (avoids hydration mismatch) */}
+        {mounted && (
+          <div className="fixed inset-0 -z-10">
+            <Canvas
+              camera={{ position: [0, 0, 5] }}
+              style={{ width: '100%', height: '100%' }}
+            >
+              <Medusae mouseRef={mouseRef} />
+            </Canvas>
+          </div>
+        )}
+
+        <Navbar />
+        
+        <main>
+          <HeroSection />
+          <ProjectsSection />
+          <AboutSection />
+        </main>
+        
+        <Footer />
       </div>
-    </div>
-  );
+    </ThemeProvider>
+  )
 }
