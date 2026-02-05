@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:full": "NODE_OPTIONS='--max-old-space-size=4096' next build",
+    "build:lowmem": "NODE_OPTIONS='--max-old-space-size=384' next build",
     "start": "next start",
     "lint": "eslint"
   },
