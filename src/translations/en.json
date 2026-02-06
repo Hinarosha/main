@@ -1,5 +1,48 @@
 {
     "navbar": {
         "title": "Hinarosha"
+    },
+
+    "hero-section": {
+        "job": "Web developer",
+        "title": "Kyllian Levent",  
+        "description": "Fullstack developer passionate about the development of sites and applications using javascript frameworks.",
+        "description2": "I organize, design, code and deploy complete web and mobile sites and applications."
+    },
+
+    "projects-section": {
+        "title": "Projects selection",
+        "title2": "List of my projects",
+        "description": "Here is a list of some of my projects. Some of them are completed and will no longer receive modifications. Others are projects that are in development and will receive more or less regular modifications."
+    },
+
+    "project-card": {
+        "repetition": {
+            "objectif": "Objective",
+            "progress": "Project progress",
+            "status": "In progress"
+        },
+
+        "project1": {
+            "title": "HowMuch",
+            "objective": "Viualisez en teps réél le montant de votre salaire hebdomadaire tout a long de votre journée de travail.",
+            "progress": 20,
+            "githubUrl": "https://github.com/Hinarosha/HowMuch"
+        },
+        "project2": {
+            "title": "ESUP Chatbot",
+            "objective": "Un chatbot relié à l'API d'ESUP pour répondre aux questions des étudiants en lien avec l'université et bien d'autre.",
+            "progress": 10,
+            "githubUrl": "https://github.com/teblam/esup-chatbot"
+        }
+    },
+
+    "about-section": {
+        "title": "À propos",
+        "description": "Voici quelques informations sur moi."
+    },
+    "footer": {
+        "title": "Footer",
+        "description": "Footer"
     }
 }

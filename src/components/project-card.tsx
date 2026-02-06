@@ -1,6 +1,7 @@
 "use client"
 
 import { Github, ExternalLink } from "lucide-react"
+import { useTranslations } from "next-intl"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Progress } from "@/components/ui/progress"
@@ -20,6 +21,8 @@ export function ProjectCard({
   imageUrl,
   githubUrl = "#",
 }: ProjectCardProps) {
+  const t = useTranslations("project-card.repetition")
+  
   return (
     <Card className="group relative overflow-hidden border border-border/20 bg-background/[0.03] backdrop-blur-[3px] transition-all duration-300 hover:border-border/40 hover:bg-background/[0.06] hover:shadow-lg hover:-translate-y-1">
       {/* Image placeholder */}
@@ -43,7 +46,7 @@ export function ProjectCard({
         <div className="absolute top-3 left-3">
           <span className="inline-flex items-center gap-1.5 rounded-full border border-border/20 bg-background/[0.03] px-2.5 py-1 text-xs font-medium backdrop-blur-[3px]">
             <span className="h-1.5 w-1.5 rounded-full bg-amber-500 animate-pulse" />
-            In Progress
+            {t("status") || "In Progress"}
           </span>
         </div>
       </div>
@@ -74,7 +77,7 @@ export function ProjectCard({
       <CardContent className="space-y-4">
         <div>
           <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-1.5">
-            Objective
+            {t("objectif")}
           </p>
           <p className="text-sm text-foreground/80 leading-relaxed line-clamp-2">
             {objective}
@@ -83,7 +86,7 @@ export function ProjectCard({
 
         <div className="space-y-2">
           <div className="flex items-center justify-between text-xs">
-            <span className="font-medium text-muted-foreground">Progress</span>
+            <span className="font-medium text-muted-foreground">{t("progress")}</span>
             <span className="font-semibold text-foreground">{progress}%</span>
           </div>
           <Progress value={progress} className="h-1.5" />

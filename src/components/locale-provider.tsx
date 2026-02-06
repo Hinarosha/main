@@ -9,14 +9,25 @@ import jp from "@/translations/jp.json"
 
 export type Locale = "en" | "fr" | "jp"
 
-const messagesMap: Record<Locale, typeof en> = { en, fr, jp }
+// Messages can have partial structure (some locales may not have all translations yet)
+type Messages = Record<string, any>
+
+const messagesMap: Record<Locale, Messages> = { en, fr, jp }
 
 const STORAGE_KEY = "locale"
 
 function getStoredLocale(): Locale {
-  if (typeof window === "undefined") return "en"
-  const stored = localStorage.getItem(STORAGE_KEY)
-  if (stored === "en" || stored === "fr" || stored === "jp") return stored
+  // Never access localStorage during SSR/build
+  if (typeof window === "undefined" || typeof localStorage === "undefined") {
+    return "en"
+  }
+  try {
+    const stored = localStorage.getItem(STORAGE_KEY)
+    if (stored === "en" || stored === "fr" || stored === "jp") return stored
+  } catch {
+    // localStorage might not be available (e.g., in some build environments)
+    return "en"
+  }
   return "en"
 }
 
@@ -45,7 +56,14 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
 
   const setLocale = useCallback((next: Locale) => {
     setLocaleState(next)
-    localStorage.setItem(STORAGE_KEY, next)
+    // Only access localStorage on client side
+    if (typeof window !== "undefined" && typeof localStorage !== "undefined") {
+      try {
+        localStorage.setItem(STORAGE_KEY, next)
+      } catch {
+        // Ignore localStorage errors (e.g., quota exceeded, private browsing)
+      }
+    }
   }, [])
 
   const value: LocaleContextValue = { locale, setLocale }
