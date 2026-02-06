@@ -2,71 +2,46 @@
 
 import { ProjectCard } from "@/components/project-card"
 import { useTranslations, useMessages } from "next-intl"
+import { projectsConfig } from "@/lib/projects.config"
 
 export function ProjectsSection() {
   const t = useTranslations("projects-section")
   const messages = useMessages() as any
-  
+
   // Helper to safely get a nested value from messages object
-  const safeGet = (path: string): string | number | null => {
-    const keys = path.split('.')
-    let value: any = messages
-    
+  const safeGet = (path: string): string | null => {
+    const keys = path.split(".")
+    let value: unknown = messages
+
     for (const key of keys) {
-      if (value === null || value === undefined || typeof value !== 'object') {
+      if (value === null || value === undefined || typeof value !== "object") {
         return null
       }
-      value = value[key]
+      value = (value as Record<string, unknown>)[key]
     }
-    
-    return value ?? null
+
+    return typeof value === "string" ? value : null
   }
-  
-  // Read projects from translations - dynamically get all project keys
-  // Limit to max 100 projects to prevent infinite loops
-  const projects: Array<{
-    title: string
-    objective: string
-    progress: number
-    githubUrl: string
-  }> = []
-  
-  const MAX_PROJECTS = 100
-  let projectIndex = 1
-  
-  while (projectIndex <= MAX_PROJECTS) {
-    const projectKey = `project${projectIndex}`
-    
-    // Check title first - if it doesn't exist, we've reached the end
-    const title = safeGet(`project-card.${projectKey}.title`)
-    
-    if (!title || typeof title !== 'string') {
-      // No more projects found, stop here
-      break
-    }
-    
-    // Now get the other fields
-    const objective = safeGet(`project-card.${projectKey}.objective`)
-    const progressRaw = safeGet(`project-card.${projectKey}.progress`)
-    const githubUrl = safeGet(`project-card.${projectKey}.githubUrl`)
-    
-    // Skip this project if any required field is missing
-    if (!objective || progressRaw === null || !githubUrl) {
-      projectIndex++
-      continue
-    }
-    
-    // Parse progress as number
-    const progress = typeof progressRaw === 'number' ? progressRaw : Number(progressRaw)
-    
-    projects.push({
-      title: String(title),
-      objective: String(objective),
-      progress,
-      githubUrl: String(githubUrl),
+
+  // Merge static config with translated content for current locale
+  const projects = projectsConfig
+    .map((config) => {
+      const title = safeGet(`project-card.${config.id}.title`)
+      const objective = safeGet(`project-card.${config.id}.objective`)
+
+      if (!title || !objective) {
+        return null
+      }
+
+      return {
+        title,
+        objective,
+        progress: config.progress,
+        githubUrl: config.githubUrl,
+        imageUrl: config.imageUrl,
+      }
     })
-    projectIndex++
-  }
+    .filter((p): p is NonNullable<typeof p> => p !== null)
 
   return (
     <section className="py-24 md:py-32">
