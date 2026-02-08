@@ -20,7 +20,7 @@
         },
         "project1": {
             "title":"HowMuch",
-            "objective":"Viualisez en teps réél le montant de votre salaire hebdomadaire tout a long de votre journée de travail.",
+            "objective":"Viualisez en temps réel le montant de votre salaire hebdomadaire tout a long de votre journée de travail. Mon plus gros projet web a ce jour.",
             "status":"En cours"
         },
         "project2": {
@@ -71,8 +71,8 @@
     },
     "about-section": {
         "title":"À propos",
-        "title2":"Quelques informations sur moi",
-        "description":"I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.",
+        "title2":"Quelques informations à propos de moi",
+        "description":"Je suis un développeur passionée. J'ai commencé le développement web lors d'un service civique et c'est depuis devenu une grande passion. Depuis le premier jour, écrir du code pour le voir se transorfmer en quelque chose de fonctionnel m'a toujours émmèrveillé. J'ai donc poursuivi mes etudes dans ce domaine.",
         "description2":"Currently exploring the boundaries of creative coding, WebGL, and generative art. When I'm not pushing pixels, you'll find me experimenting with new technologies",
         "description3":"I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.",
         "description4":"Currently exploring the boundaries of creative coding, WebGL, and generative art. When I'm not pushing pixels, you'll find me experimenting with new technologies or contributing to open-source projects."

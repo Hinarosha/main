@@ -2,6 +2,7 @@
 
 import { Github, Linkedin, Mail, ArrowUpRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useTranslations } from "next-intl"
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/Hinarosha", label: "GitHub" },
@@ -10,6 +11,7 @@ const socialLinks = [
 ]
 
 export function AboutSection() {
+  const t = useTranslations("about-section")
   return (
     <section className="py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
@@ -17,16 +19,16 @@ export function AboutSection() {
           {/* Left column - heading */}
           <div className="rounded-2xl border border-border/20 bg-background/[0.03] px-6 py-6 backdrop-blur-[3px] md:px-8 md:py-8">
             <span className="mb-4 inline-block text-xs font-medium text-muted-foreground uppercase tracking-widest">
-              About
+              {t("title")}
             </span>
             <h2 className="mb-3 text-3xl font-bold tracking-tight text-foreground md:text-4xl text-balance">
-              A bit about me
+              {t("title2")}
             </h2>
             <p className="text-foreground/90 leading-relaxed">
-                {"I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability."}
+                {t("description")}
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-                {"Currently exploring the boundaries of creative coding, WebGL, and generative art. When I'm not pushing pixels, you'll find me experimenting with new technologies"}
+                {t("description2")}
             </p>
           </div>
 
@@ -34,11 +36,11 @@ export function AboutSection() {
           <div className="space-y-6">
             <div className="rounded-2xl border border-border/20 bg-background/[0.03] p-6 backdrop-blur-[3px] md:p-8">
               <p className="text-foreground/90 leading-relaxed">
-                {"I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability."}
+                {t("description3")}
               </p>
               
               <p className="mt-4 text-muted-foreground leading-relaxed">
-                {"Currently exploring the boundaries of creative coding, WebGL, and generative art. When I'm not pushing pixels, you'll find me experimenting with new technologies or contributing to open-source projects."}
+                {t("description4")}
               </p>
             </div>
 

@@ -14,19 +14,15 @@ type Messages = Record<string, any>
 
 const messagesMap: Record<Locale, Messages> = { en, fr, jp }
 
-const STORAGE_KEY = "locale"
-
-function getStoredLocale(): Locale {
-  // Never access localStorage during SSR/build
-  if (typeof window === "undefined" || typeof localStorage === "undefined") {
-    return "en"
-  }
-  try {
-    const stored = localStorage.getItem(STORAGE_KEY)
-    if (stored === "en" || stored === "fr" || stored === "jp") return stored
-  } catch {
-    // localStorage might not be available (e.g., in some build environments)
-    return "en"
+/** Detects browser language; returns en, fr, or jp if supported, otherwise en */
+function getDetectedLocale(): Locale {
+  if (typeof window === "undefined" || !navigator?.language) return "en"
+  const langs = [navigator.language, ...(navigator.languages || [])]
+  for (const raw of langs) {
+    const code = raw.toLowerCase().split("-")[0]
+    if (code === "fr") return "fr"
+    if (code === "ja" || code === "jp") return "jp"
+    if (code === "en") return "en"
   }
   return "en"
 }
@@ -44,26 +40,18 @@ export function useLocale() {
   return ctx
 }
 
-/** Client-only locale: stored in localStorage, no URL change. Provides next-intl messages for the current locale. */
+/** Client-only locale: detects browser language on each visit, no persistence. Provides next-intl messages for the current locale. */
 export function LocaleProvider({ children }: { children: React.ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>("en")
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
-    setLocaleState(getStoredLocale())
+    setLocaleState(getDetectedLocale())
     setMounted(true)
   }, [])
 
   const setLocale = useCallback((next: Locale) => {
     setLocaleState(next)
-    // Only access localStorage on client side
-    if (typeof window !== "undefined" && typeof localStorage !== "undefined") {
-      try {
-        localStorage.setItem(STORAGE_KEY, next)
-      } catch {
-        // Ignore localStorage errors (e.g., quota exceeded, private browsing)
-      }
-    }
   }, [])
 
   const value: LocaleContextValue = { locale, setLocale }
