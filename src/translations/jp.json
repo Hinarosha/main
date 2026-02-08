@@ -1,1 +1,86 @@
-{"navbar":{"title":"ヒナロシャ"},"hero-section":{"job":"ウェブ開発者","title":"ルヴァン・キリアン","description":"ウェブ開発者は、javascriptフレームワークを使用してサイトとアプリケーションを開発することに熱心なフルスタック開発者です。","description2":"私は、ウェブとモバイルサイトとアプリケーションを完全に組織、設計、コーディング、デプロイすることができます。"},"projects-section":{"title":"プロジェクト選択","title2":"プロジェクトリスト","description":"ここには、私のプロジェクトの一部をリストアップします。いくつかは完成しており、それ以上の変更は受け取りません。他のプロジェクトは開発中であり、よりまれな変更を受け取ります。"},"project-card":{"repetition":{"objectif":"目的","progress":"プロジェクト進捗"},"project1":{"title":"HowMuch","objective":"あなたの週給の実際の金額を見ることができます。","status":"進行中"},"project2":{"title":"ESUP Chatbot","objective":"ESUP APIに接続されたチャットボットで、学生の質問に答えます。","status":"完了"},"project3":{"title":"SleepRecords","objective":"睡眠習慣と記録を追跡するCakePHPアプリケーション。","status":"完了"}},"about-section":{"title":"About","title2":"私について","description":"アクセスしやすく、ピクセル単位で正確なユーザーインターフェースを、思いやりのあるデザインと堅牢なエンジニアリングで作成することに情熱を注ぐ開発者です。デザインと開発の交差点に最も得意な領域があり、見た目が美しく、パフォーマンスと使いやすさを徹底的に構築した体験を作り上げています。","description2":"クリエイティブコーディング、WebGL、生成アートの境界を探求中。ピクセルを触っていないときは、新しい技術を試したりしています","description3":"クリエイティブコーディング、WebGL、生成アートの境界を探求中。ピクセルを触っていないときは、新しい技術を試したり、オープンソースプロジェクトに貢献したりしています。","github":"GitHub","linkedin":"LinkedIn","email":"Email"},"footer":{"title":"Footer","description":"Footer"}}
+{
+    "navbar": {
+        "title": "ヒナロシャ"
+    },
+    "hero-section": {
+        "job": "Webエンジニア",
+        "title": "ルヴァン・キリアン",
+        "description": "Javascriptフレームワークを用いたサイトやアプリの開発に情熱を注ぐ、フルスタックエンジニア。",
+        "description2": "Webサイトやモバイルアプリの企画・デザインから、コーディング、デプロイまで一貫して行います。"
+    },
+    "projects-section": {
+        "title": "制作実績",
+        "title2": "制作実績一覧",
+        "description": "これまでの制作実績の一部をご紹介します。開発が完了し更新を終了しているものもあれば、現在開発中で、定期的または不定期にアップデートを行っているプロジェクトもあります。"
+    },
+    "project-card": {
+        "repetition": {
+            "objectif": "目的",
+            "progress": "進捗状況"
+        },
+        "project1": {
+            "title": "HowMuch",
+            "objective": "労働時間中に稼いだ金額をリアルタイムで可視化するプロジェクトです。私にとって、これまでで最も規模の大きなWebプロジェクトです。",
+            "status": "開発中"
+        },
+        "project2": {
+            "title": "ESUP Chatbot",
+            "objective": "大学公式APIを活用した、学生支援用チャットボット。 大学生活に関するあらゆる質問に自動で回答します。",
+            "status": "完了"
+        },
+        "project3": {
+            "title": "SleepRecords",
+            "objective": "CakePHPで開発した習慣・睡眠トラッカー。 独自のスコアシステムとグラフ表示で、日々の成長を可視化します。",
+            "status": "完了"
+        },
+        "project4": {
+            "title": "2048",
+            "objective": "Flutterで制作した2048ゲームです。複数の目標設定やカラーテーマの切り替え機能を備えています。学校の課題（プロジェクト）として開発しました。",
+            "status": "完了"
+        },
+        "project5": {
+            "title": "Synthetic Sacrifice",
+            "objective": "一番の自信作です。2Dと3Dが融合したサイバーパンクRPG。ビルドや結末が変化する、自由度の高いシステムが特徴です。",
+            "status": "開発中"
+        },
+        "project6": {
+            "title": "Synthetic Sacrifice Web",
+            "objective": "「Synthetic Sacrifice」の紹介サイトです。現時点では、ゲームの重大なネタバレが含まれていますのでご注意ください。",
+            "status": "開発中"
+        },
+        "project7": {
+            "title": "Hinarosha Games",
+            "objective": "オンラインゲームを集約したポータルサイト（現在1作品）。PHP、Vue.js、MySQLで構築しました。学校の課題として制作したため、今後の更新予定はありません。",
+            "status": "完了"
+        },
+        "project8": {
+            "title": "Happy Birthday OS",
+            "objective": "Windows 95風のバースデー特設サイト。インタラクティブな演出や、誕生日を祝うアニメーションを搭載しています。",
+            "status": "完了"
+        },
+        "project9": {
+            "title": "To-Do list",
+            "objective": "C#で制作した、データベース不要の即席ToDoアプリ。「バグではなく仕様」というコンセプトで開発しました。",
+            "status": "完了"
+        },
+        "project10": {
+            "title": "Thumbnails Downloader Plus",
+            "objective": "RetroArch向けのPythonツール。不足しているゲームのサムネイル画像を、より効率的に一括ダウンロードできます。",
+            "status": "完了"
+        }
+    },
+    "about-section": {
+        "title": "自己紹介",
+        "title2": "プロフィール",
+        "description": "I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.",
+        "description2": "Currently exploring the boundaries of creative coding, WebGL, and generative art. When I'm not pushing pixels, you'll find me experimenting with new technologies or contributing to open-source projects.",
+        "description3": "I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.",
+        "description4": "Currently exploring the boundaries of creative coding, WebGL, and generative art. When I'm not pushing pixels, you'll find me experimenting with new technologies or contributing to open-source projects."
+    },
+    "footer": {
+        "title": "2026. 情熱を込めて制作。",
+        "button1": "お問い合わせ",
+        "button2": "免責事項・規約",
+        "button3": "履歴書"
+    }
+}

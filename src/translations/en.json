@@ -1,1 +1,86 @@
-{"navbar":{"title":"Hinarosha"},"hero-section":{"job":"Web developer","title":"Kyllian Levent","description":"Fullstack developer passionate about the development of sites and applications using javascript frameworks.","description2":"I organize, design, code and deploy complete web and mobile sites and applications."},"projects-section":{"title":"Projects selection","title2":"List of my projects","description":"Here is a list of some of my projects. Some of them are completed and will no longer receive modifications. Others are projects that are in development and will receive more or less regular modifications."},"project-card":{"repetition":{"objectif":"Objective","progress":"Project progress"},"project1":{"title":"HowMuch","objective":"Viualisez en teps réél le montant de votre salaire hebdomadaire tout a long de votre journée de travail.","status":"In progress"},"project2":{"title":"ESUP Chatbot","objective":"Un chatbot relié à l'API d'ESUP pour répondre aux questions des étudiants en lien avec l'université et bien d'autre.","status":"Completed"},"project3":{"title":"SleepRecords","objective":"A CakePHP app to track your sleep habits and records.","status":"Completed"}},"about-section":{"title":"About","title2":"A bit about me","description":"I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.","description2":"Currently exploring the boundaries of creative coding, WebGL, and generative art. When I'm not pushing pixels, you'll find me experimenting with new technologies","description3":"Currently exploring the boundaries of creative coding, WebGL, and generative art. When I'm not pushing pixels, you'll find me experimenting with new technologies or contributing to open-source projects.","github":"GitHub","linkedin":"LinkedIn","email":"Email"},"footer":{"title":"Footer","description":"Footer"}}
+{
+    "navbar": {
+        "title": "Hinarosha"
+    },
+    "hero-section": {
+        "job": "Web Developer",
+        "title": "Kyllian Levent",
+        "description": "Fullstack Developer with a passion for the development of sites and applications under javascript framework.",
+        "description2": "I organize, design, code and deploy complete web and mobile sites and applications."
+    },
+    "projects-section": {
+        "title": "Projects Selection",
+        "title2": "List of my projects",
+        "description": "Here is a list of some of my projects. Some of them are completed projects that will not receive any more updates. Others are projects that are currently in development and will receive regular or irregular updates."
+    },
+    "project-card": {
+        "repetition": {
+            "objectif": "Objective",
+            "progress": "Project progress"
+        },
+        "project1": {
+            "title": "HowMuch",
+            "objective": "Visualize in real time the amount of money you've earned throughout your day of work. It is my biggest web project to this day.",
+            "status": "In progress"
+        },
+        "project2": {
+            "title": "ESUP Chatbot",
+            "objective": "A chatbot linked to the ESUP API to answer students's questions about the university and much more.",
+            "status": "Done"
+        },
+        "project3": {
+            "title": "SleepRecords",
+            "objective": "A CakePHP application to track your habits and sleep records with a score system. Include a nice chart to show your progress.",
+            "status": "Done"
+        },
+        "project4": {
+            "title": "2048",
+            "objective": "A 2048 game made with Flutter with different objectives and color themes. Created as a school project.",
+            "status": "Done"
+        },
+        "project5": {
+            "title": "Synthetic Sacrifice",
+            "objective": "My favorite project. A 2D-3D hybrid RPG game in a Cyberpunk world. Multiple builds possible and multiple endings possible.",
+            "status": "Writing the scenario"
+        },
+        "project6": {
+            "title": "Synthetic Sacrifice Web",
+            "objective": "A website to present the Synthetic Sacrifice project. As for now, this website spoil the whole game...",
+            "status": "In progress"
+        },
+        "project7": {
+            "title": "Hinarosha Games",
+            "objective": "A portal with a collection of online games (only one for now). Built with PHP, Vue.js, and MySQL. Won't receive update as it was a school project.",
+            "status": "Done"
+        },
+        "project8": {
+            "title": "Happy Birthday OS",
+            "objective": "A Windows 95 style birthday party website with interactive prompts and a birthday party animation.",
+            "status": "Done"
+        },
+        "project9": {
+            "title": "To-Do list",
+            "objective": "An instant C# To-Do list application that doesn't use a database. It's not a bug, it's a feature ;)",
+            "status": "Done"
+        },
+        "project10": {
+            "title": "Thumbnails Downloader Plus",
+            "objective": "A Python application to use with Retroarch to download missings games thumbnails more efficiently.",
+            "status": "Done"
+        }
+    },
+    "about-section": {
+        "title": "About",
+        "title2": "Some infos about me",
+        "description": "I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.",
+        "description2": "Currently exploring the boundaries of creative coding, WebGL, and generative art. When I'm not pushing pixels, you'll find me experimenting with new technologies or contributing to open-source projects.",
+        "description3": "I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.",
+        "description4": "Currently exploring the boundaries of creative coding, WebGL, and generative art. When I'm not pushing pixels, you'll find me experimenting with new technologies or contributing to open-source projects."
+    },
+    "footer": {
+        "title": "2026. Made with passion.",
+        "button1": "Contact",
+        "button2": "Legal mentions",
+        "button3": "Curriculum Vitae"
+    }
+}

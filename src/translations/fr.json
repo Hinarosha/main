@@ -3,82 +3,84 @@
         "title": "Hinarosha"
     },
     "hero-section": {
-        "job":"Développeur web",
-        "title":"Kyllian Levent",
-        "description":"Développeur fullstack passionné par le développement de sites et applications sous framework javascript.",
-        "description2":"J'organise, design, code et deploit des sites et applications web et mobiles complètes."
+        "job": "Développeur web",
+        "title": "Kyllian Levent",
+        "description": "Développeur fullstack passionné par le développement de sites et applications sous framework javascript.",
+        "description2": "J'organise, design, code et deploit des sites et applications web et mobiles complètes."
     },
     "projects-section": {
-        "title":"Séléction de projets",
-        "title2":"Liste de mes projets",
-        "description":"Voici une liste de certains de mes projets. Certains d'entre eux sont des projets qui ont été complété et ne receveront plus de modifications. D'autre sont des projets qui sont en cours de développement et recevront des modifications plus ou moins régulières."
+        "title": "Séléction de projets",
+        "title2": "Liste de mes projets",
+        "description": "Voici une liste de certains de mes projets. Certains d'entre eux sont des projets qui ont été complété et ne receveront plus de modifications. D'autre sont des projets qui sont en cours de développement et recevront des modifications plus ou moins régulières."
     },
     "project-card": {
         "repetition": {
-            "objectif":"Objectif",
-            "progress":"Avancement du projet"
+            "objectif": "Objectif",
+            "progress": "Avancement du projet"
         },
         "project1": {
-            "title":"HowMuch",
-            "objective":"Viualisez en temps réel le montant de votre salaire hebdomadaire tout a long de votre journée de travail. Mon plus gros projet web a ce jour.",
-            "status":"En cours"
+            "title": "HowMuch",
+            "objective": "Viualisez en temps réel le montant de votre salaire hebdomadaire tout a long de votre journée de travail. Mon plus gros projet web a ce jour.",
+            "status": "En cours"
         },
         "project2": {
-            "title":"ESUP Chatbot",
-            "objective":"Un chatbot relié à l'API d'ESUP pour répondre aux questions des étudiants en lien avec l'université et bien d'autre.",
-            "status":"Terminé"
+            "title": "ESUP Chatbot",
+            "objective": "Un chatbot relié à l'API d'ESUP pour répondre aux questions des étudiants en lien avec l'université et bien d'autre.",
+            "status": "Terminé"
         },
         "project3": {
-            "title":"SleepRecords",
-            "objective":"Une application CakePHP pour suivre vos habitudes et vos enregistrements de sommeil.",
-            "status":"Terminé"
+            "title": "SleepRecords",
+            "objective": "Une application CakePHP pour suivre vos habitudes et vos enregistrements de sommeil.",
+            "status": "Terminé"
         },
         "project4": {
-            "title":"2048",
-            "objective":"Un jeu de 2048 fait en Flutter avec different objectifs et themes de couleur. Créé dans le cadre d'un projet scolaire.",
-            "status":"Terminé"
+            "title": "2048",
+            "objective": "Un jeu de 2048 fait en Flutter avec different objectifs et themes de couleur. Créé dans le cadre d'un projet scolaire.",
+            "status": "Terminé"
         },
         "project5": {
-            "title":"Synthetic Sacrifice",
-            "objective":"Mon projet favoris. Un jeu de rôle en 2D-3D hybride dans un monde Cyberpunk. Plusieur build possible et plusieurs fin possible.",
-            "status":"Scénario en écriture"
+            "title": "Synthetic Sacrifice",
+            "objective": "Mon projet favoris. Un jeu de rôle en 2D-3D hybride dans un monde Cyberpunk. Plusieur build possible et plusieurs fin possible.",
+            "status": "Scénario en écriture"
         },
         "project6": {
-            "title":"Synthetic Sacrifice Web",
-            "objective":"Un site web pour presenter l'avancement du projet Synthetic Sacrifice. Pour l'instant le site spoil vraiment tout le jeu...",
-            "status":"En cours"
+            "title": "Synthetic Sacrifice Web",
+            "objective": "Un site web pour presenter l'avancement du projet Synthetic Sacrifice. Pour l'instant le site spoil vraiment tout le jeu...",
+            "status": "En cours"
         },
         "project7": {
-            "title":"Hinarosha Games",
-            "objective":"Un portail de jeux avec une collection de jeux en ligne (un seul pour l'instant). Construit avec PHP, Vue.js, et MySQL.",
-            "status":"Terminé"
+            "title": "Hinarosha Games",
+            "objective": "Un portail de jeux avec une collection de jeux en ligne (un seul pour l'instant). Construit avec PHP, Vue.js, et MySQL.",
+            "status": "Terminé"
         },
         "project8": {
-            "title":"Happy Birthday OS",
-            "objective":"Un site web d'anniversaire Windows 95 avec des prompts interactifs et une animation de fête.",
-            "status":"Terminé"
+            "title": "Happy Birthday OS",
+            "objective": "Un site web d'anniversaire Windows 95 avec des prompts interactifs et une animation de fête.",
+            "status": "Terminé"
         },
         "project9": {
-            "title":"To-Do list",
-            "objective":"Une application C# de ToDo liste instantannée qui n'utilise pas de base de données. C'est pas un bug, c'est une feature ;)",
-            "status":"Terminé"
+            "title": "To-Do list",
+            "objective": "Une application C# de ToDo liste instantannée qui n'utilise pas de base de données. C'est pas un bug, c'est une feature ;)",
+            "status": "Terminé"
         },
         "project10": {
-            "title":"Thumbnails Downloader Plus",
-            "objective":"Une application Python à utiliser avec Retroarch pour télécharger les miniatures des jeux de maniere plus efficace.",
-            "status":"Terminé"
+            "title": "Thumbnails Downloader Plus",
+            "objective": "Une application Python à utiliser avec Retroarch pour télécharger les miniatures des jeux de maniere plus efficace.",
+            "status": "Terminé"
         }
     },
     "about-section": {
-        "title":"À propos",
-        "title2":"Quelques informations à propos de moi",
-        "description":"Je suis un développeur passionée. J'ai commencé le développement web lors d'un service civique et c'est depuis devenu une grande passion. Depuis le premier jour, écrir du code pour le voir se transorfmer en quelque chose de fonctionnel m'a toujours émmèrveillé. J'ai donc poursuivi mes etudes dans ce domaine.",
-        "description2":"Currently exploring the boundaries of creative coding, WebGL, and generative art. When I'm not pushing pixels, you'll find me experimenting with new technologies",
-        "description3":"I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.",
-        "description4":"Currently exploring the boundaries of creative coding, WebGL, and generative art. When I'm not pushing pixels, you'll find me experimenting with new technologies or contributing to open-source projects."
+        "title": "À propos",
+        "title2": "Quelques informations à propos de moi",
+        "description": "Je suis un développeur passionée. J'ai commencé le développement web lors d'un service civique et c'est depuis devenu une grande passion. Depuis le premier jour, écrir du code pour le voir se transorfmer en quelque chose de fonctionnel m'a toujours émmèrveillé. J'ai donc poursuivi mes etudes dans ce domaine.",
+        "description2": "Currently exploring the boundaries of creative coding, WebGL, and generative art. When I'm not pushing pixels, you'll find me experimenting with new technologies",
+        "description3": "I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.",
+        "description4": "Currently exploring the boundaries of creative coding, WebGL, and generative art. When I'm not pushing pixels, you'll find me experimenting with new technologies or contributing to open-source projects."
     },
     "footer": {
-        "title":"2026. Fait avec passion.",
-        "description":"Footer"
+        "title": "2026. Fait avec passion.",
+        "button1": "Contact",
+        "button2": "Mentions légales",
+        "button3": "Curriculum Vitae"
     }
 }
