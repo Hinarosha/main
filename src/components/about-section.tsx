@@ -4,9 +4,9 @@ import { Github, Linkedin, Mail, ArrowUpRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
+  { icon: Github, href: "https://github.com/Hinarosha", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/kyllian-levent-627216251/", label: "LinkedIn" },
+  { icon: Mail, href: "mailto:levent.kyllian@gmail.com", label: "Email" },
 ]
 
 export function AboutSection() {
@@ -19,9 +19,15 @@ export function AboutSection() {
             <span className="mb-4 inline-block text-xs font-medium text-muted-foreground uppercase tracking-widest">
               About
             </span>
-            <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl text-balance">
+            <h2 className="mb-3 text-3xl font-bold tracking-tight text-foreground md:text-4xl text-balance">
               A bit about me
             </h2>
+            <p className="text-foreground/90 leading-relaxed">
+                {"I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability."}
+            </p>
+            <p className="mt-4 text-muted-foreground leading-relaxed">
+                {"Currently exploring the boundaries of creative coding, WebGL, and generative art. When I'm not pushing pixels, you'll find me experimenting with new technologies"}
+            </p>
           </div>
 
           {/* Right column - content */}

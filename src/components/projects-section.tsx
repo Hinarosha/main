@@ -2,7 +2,7 @@
 
 import { ProjectCard } from "@/components/project-card"
 import { useTranslations, useMessages } from "next-intl"
-import { projectsConfig } from "@/lib/projects.config"
+import { projectsConfig, STATUS_STYLES } from "@/lib/projects.config"
 
 export function ProjectsSection() {
   const t = useTranslations("projects-section")
@@ -28,6 +28,7 @@ export function ProjectsSection() {
     .map((config) => {
       const title = safeGet(`project-card.${config.id}.title`)
       const objective = safeGet(`project-card.${config.id}.objective`)
+      const status = safeGet(`project-card.${config.id}.status`)
 
       if (!title || !objective) {
         return null
@@ -36,6 +37,8 @@ export function ProjectsSection() {
       return {
         title,
         objective,
+        status: status ?? undefined,
+        statusColor: STATUS_STYLES[config.status],
         progress: config.progress,
         githubUrl: config.githubUrl,
         imageUrl: config.imageUrl,

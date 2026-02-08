@@ -1,39 +1,45 @@
 {
-  "navbar": {
-    "title": "Hinarosha"
-  },
-  "hero-section": {
-    "job": "Web developer",
-    "title": "Kyllian Levent",
-    "description": "Fullstack developer passionate about the development of sites and applications using javascript frameworks.",
-    "description2": "I organize, design, code and deploy complete web and mobile sites and applications."
-  },
-  "projects-section": {
-    "title": "Projects selection",
-    "title2": "List of my projects",
-    "description": "Here is a list of some of my projects. Some of them are completed and will no longer receive modifications. Others are projects that are in development and will receive more or less regular modifications."
-  },
-  "project-card": {
-    "repetition": {
-      "objectif": "Objective",
-      "progress": "Project progress",
-      "status": "In progress"
+    "navbar": {
+        "title":"Hinarosha"
     },
-    "project1": {
-      "title": "HowMuch",
-      "objective": "Viualisez en teps réél le montant de votre salaire hebdomadaire tout a long de votre journée de travail."
+    "hero-section": {
+        "job":"Web developer",
+        "title":"Kyllian Levent",
+        "description":"Fullstack developer passionate about the development of sites and applications using javascript frameworks.",
+        "description2":"I organize, design, code and deploy complete web and mobile sites and applications."
     },
-    "project2": {
-      "title": "ESUP Chatbot",
-      "objective": "Un chatbot relié à l'API d'ESUP pour répondre aux questions des étudiants en lien avec l'université et bien d'autre."
+    "projects-section": {
+        "title":"Projects selection",
+        "title2":"List of my projects",
+        "description":"Here is a list of some of my projects. Some of them are completed and will no longer receive modifications. Others are projects that are in development and will receive more or less regular modifications."
+    },
+    "project-card": {
+        "repetition": {
+            "objectif":"Objective",
+            "progress":"Project progress"
+        },
+        "project1": {
+            "title":"HowMuch",
+            "objective":"Viualisez en teps réél le montant de votre salaire hebdomadaire tout a long de votre journée de travail.",
+            "status":"In progress"
+        },
+        "project2": {
+            "title":"ESUP Chatbot",
+            "objective":"Un chatbot relié à l'API d'ESUP pour répondre aux questions des étudiants en lien avec l'université et bien d'autre.",
+            "status":"Completed"
+        },
+        "project3": {
+            "title":"SleepRecords",
+            "objective":"A CakePHP app to track your sleep habits and records.",
+            "status":"Completed"
+        }
+    },
+    "about-section": {
+        "title":"About",
+        "description":"Here is some information about me."
+    },
+    "footer": {
+        "title":"Footer",
+        "description":"Footer"
     }
-  },
-  "about-section": {
-    "title": "À propos",
-    "description": "Voici quelques informations sur moi."
-  },
-  "footer": {
-    "title": "Footer",
-    "description": "Footer"
-  }
 }

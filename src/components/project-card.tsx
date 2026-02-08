@@ -9,6 +9,8 @@ import { Progress } from "@/components/ui/progress"
 interface ProjectCardProps {
   title: string
   objective: string
+  status?: string
+  statusColor?: string
   progress: number
   imageUrl?: string
   githubUrl?: string
@@ -17,6 +19,8 @@ interface ProjectCardProps {
 export function ProjectCard({
   title,
   objective,
+  status,
+  statusColor = "bg-amber-500 animate-pulse",
   progress,
   imageUrl,
   githubUrl = "#",
@@ -37,7 +41,7 @@ export function ProjectCard({
           <div className="flex h-full w-full items-center justify-center">
             <div className="flex flex-col items-center gap-2 text-muted-foreground/60">
               <div className="h-12 w-12 rounded-xl border-2 border-dashed border-current" />
-              <span className="text-xs uppercase tracking-wider">Project Preview</span>
+              <span className="text-xs uppercase tracking-wider">Project Preview Soon</span>
             </div>
           </div>
         )}
@@ -45,8 +49,8 @@ export function ProjectCard({
         {/* Status badge */}
         <div className="absolute top-3 left-3">
           <span className="inline-flex items-center gap-1.5 rounded-full border border-border/20 bg-background/[0.03] px-2.5 py-1 text-xs font-medium backdrop-blur-[3px]">
-            <span className="h-1.5 w-1.5 rounded-full bg-amber-500 animate-pulse" />
-            {t("status") || "In Progress"}
+            <span className={`h-1.5 w-1.5 rounded-full ${statusColor}`} />
+            {status ?? "In Progress"}
           </span>
         </div>
       </div>
