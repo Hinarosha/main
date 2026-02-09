@@ -35,7 +35,7 @@ export function ProjectCard({
           <img
             src={imageUrl || "/placeholder.svg"}
             alt={title}
-            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            className="h-full w-full object-cover"
           />
         ) : (
           <div className="flex h-full w-full items-center justify-center">
@@ -45,25 +45,22 @@ export function ProjectCard({
             </div>
           </div>
         )}
-        
-        {/* Status badge */}
-        <div className="absolute top-3 left-3">
-          <span className="inline-flex items-center gap-1.5 rounded-full border border-border/20 bg-background/[0.03] px-2.5 py-1 text-xs font-medium backdrop-blur-[3px]">
-            <span className={`h-1.5 w-1.5 rounded-full ${statusColor}`} />
-            {status ?? "In Progress"}
-          </span>
-        </div>
       </div>
 
       <CardHeader className="pb-3">
-        <div className="flex items-start justify-between gap-4">
-          <h3 className="text-lg font-semibold tracking-tight text-foreground">
+        <div className="flex items-center justify-between gap-3">
+          <h3 className="text-lg font-semibold tracking-tight text-foreground min-w-0 flex-1">
             {title}
           </h3>
+          {/* Status badge - off the image, in the header row */}
+          <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-border/20 bg-background/[0.03] px-2.5 py-1 text-xs font-medium backdrop-blur-[3px]">
+            <span className={`h-1.5 w-1.5 rounded-full ${statusColor}`} />
+            {status ?? "In Progress"}
+          </span>
           <Button
             variant="ghost"
             size="icon"
-            className="h-8 w-8 shrink-0 rounded-full"
+            className="h-8 w-8 shrink-0 rounded-full border border-border/20"
             asChild
           >
             <a
