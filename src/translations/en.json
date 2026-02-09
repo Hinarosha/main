@@ -72,10 +72,10 @@
     "about-section": {
         "title": "About",
         "title2": "Some infos about me",
-        "description": "I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.",
-        "description2": "Currently exploring the boundaries of creative coding, WebGL, and generative art. When I'm not pushing pixels, you'll find me experimenting with new technologies or contributing to open-source projects.",
-        "description3": "I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.",
-        "description4": "Currently exploring the boundaries of creative coding, WebGL, and generative art. When I'm not pushing pixels, you'll find me experimenting with new technologies or contributing to open-source projects."
+        "description": "I'm a passionate developer who discovered web development during a civic service assignment, and it quickly grew into a deep passion. From the very first day, the magic of writing code and watching it transform into something functional has always amazed me. This fascination naturally led me to pursue my studies in web development.",
+        "description2": "During my studies, I also learned Python, C++, and C#. I've also started learning Rust as it's becoming an industry standard. I'll also be learning Angular, as it's a framework widely used in the professional world and in large companies.",
+        "description3": "Outside of work and studies, I'm an avid gamer with a soft spot for all (or almost all) generations of video games. I collect PlayStation consoles, from the PS1 to the PS5, including the PSP and PS Vita. I'm also a huge car enthusiast. My dream is to one day buy a Mazda MX-5 NA, swap it with a 20B rotary engine (3 rotors + turbo), and take it to the track.",
+        "description4": "I also really enjoy learning new languages. After mastering English, I started learning Japanese. While I'm not yet fluent enough for smooth conversations, I'm actively working on it. Many things inspired me to learn Japanese. Of course, my love for PlayStation and Sony in general played a role, but I also deeply admire their car culture, as most of my favorite cars are Japanese."
     },
     "footer": {
         "title": "2026. Made with passion.",
