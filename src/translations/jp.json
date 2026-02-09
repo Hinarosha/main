@@ -72,10 +72,10 @@
     "about-section": {
         "title": "自己紹介",
         "title2": "プロフィール",
-        "description": "I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.",
-        "description2": "Currently exploring the boundaries of creative coding, WebGL, and generative art. When I'm not pushing pixels, you'll find me experimenting with new technologies or contributing to open-source projects.",
-        "description3": "I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.",
-        "description4": "Currently exploring the boundaries of creative coding, WebGL, and generative art. When I'm not pushing pixels, you'll find me experimenting with new technologies or contributing to open-source projects."
+        "description": "私は情熱を持った開発者です。シビックサービス（社会貢献活動）中にウェブ開発に出会い、それがすぐに大きな情熱へと変わりました。最初の日から、コードを書いてそれが形になり、機能していく魔法のようなプロセスにいつも魅了されています。その魅力に惹かれ、自然とウェブ開発の道で学業を深めることを決めました。",
+        "description2": "在学中、Python、C++、C#も習得しました。現在は業界の標準になりつつあるRustの学習も始めています。また、プロフェッショナルな現場や大企業で広く採用されているAngularも、今後学んでいく予定です。",
+        "description3": "仕事や学業以外では、ほぼ全ての世代のゲームを愛する熱心なゲーマーです。PS1からPS5、PSP、PS Vitaまで、歴代のPlayStationコンソールをコレクションしています。また、大の車好きでもあります。いつかマツダ・ロードスター（MX-5 NA）を購入し、20Bロータリーエンジン（3ローター＋ターボ）をスワップしてサーキットで走らせるのが私の夢です。",
+        "description4": "新しい言語を学ぶことも趣味の一つです。英語を習得した後、日本語の学習を始めました。まだ流暢に会話ができるレベルではありませんが、日々上達に向けて取り組んでいます。日本語を学び始めたきっかけはたくさんあります。PlayStationやソニーの大ファンであることはもちろんですが、大好きな車のほとんどが日本車であるため、日本のカーカルチャーにも深く心惹かれています。"
     },
     "footer": {
         "title": "2026. 情熱を込めて制作。",
