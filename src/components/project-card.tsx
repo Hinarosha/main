@@ -35,7 +35,7 @@ export function ProjectCard({
           <img
             src={imageUrl || "/placeholder.svg"}
             alt={title}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover opacity-40 blur-[2px] transition-all duration-300 group-hover:opacity-100 group-hover:blur-none"
           />
         ) : (
           <div className="flex h-full w-full items-center justify-center">

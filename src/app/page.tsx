@@ -16,6 +16,13 @@ export default function PortfolioPage() {
 
   useEffect(() => {
     setMounted(true)
+    // Start Medusae centered on first load/refresh instead of in the corner
+    if (typeof window !== "undefined") {
+      mouseRef.current = {
+        x: window.innerWidth / 2,
+        y: window.innerHeight / 2,
+      }
+    }
   }, [])
   useEffect(() => {
     const onMove = (e: MouseEvent) => { mouseRef.current = { x: e.clientX, y: e.clientY } }
